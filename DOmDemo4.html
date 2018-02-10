@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Location Object Demo</title>
+		<script type="text/javascript">
+			function showURL()
+			{
+				var url= window.location.href;
+				document.getElementById("msg").innerText=unescape(url);
+			}
+			
+			function assignPage()
+			{
+				window.location.assign("http://www.microsoft.com");
+			}
+			
+			function reloadPage()
+			{
+				window.location.reload();
+			}
+			
+			function replacePage()
+			{
+				window.location.replace("http://www.capgemini.com");
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h2>Location Object Demo</h2>
+		
+		<input type="button" value="Show Current Location" onclick="showURL()"/>
+		<input type="button" value="Assign Page" onclick="assignPage()"/>
+		<input type="button" value="Reload Page" onclick="reloadPage()"/>
+		<input type="button" value="Replace Page" onclick="replacePage()"/>
+		<br><br>
+		<span id="msg">
+		</span>
+	</body>
+</html>

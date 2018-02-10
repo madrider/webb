@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>DOM Demo</title>
+		<script type="text/javascript">
+		function calculateSum()
+		{
+			var num1= document.f1.num1.value;
+			var num2= document.f1.num2.value;
+			
+			if(num1=="" || num2=="")
+			{
+				document.getElementById("result").
+				innerHTML="<b>Please Provide both the numbers</b>";
+			}
+			else
+			{
+				var sum = parseInt(num1) + parseInt(num2);
+				document.getElementById("result").
+				innerHTML="<b>Sum ="+sum+"</b>";
+			}
+		}
+			
+		</script>
+	</head>
+	
+	<body>
+		<h2>Calculator</h2>
+		
+		<form name="f1">
+		First Number <input type="text" name="num1"/><br><br>
+		Second Number <input type="text" name="num2"/> <br><br>
+		
+		<input type="button" value="Show SUM" onclick="calculateSum()"/> <br><br>
+		
+		<span id="result">
+		</span>
+		</form>
+	</body>
+</html>

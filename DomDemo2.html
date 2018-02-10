@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Window Object Demo</title>
+		<script type="text/javascript">
+		var mywindow
+		
+		function openWindow()
+		{
+			mywindow = window.open("Demo1.html","",
+				"height=300,width=300");
+		}
+		
+		function func1()
+		{
+			setTimeout("alert('Hello after 5 sec')",5000);
+		}
+		
+			function showTime()
+			{
+				var d = new Date();
+				//document.f1.time.value= d;
+				document.forms[0].time.value=d;
+			}
+			var y=setInterval("showTime()",1000);
+		</script>
+	</head>
+	
+	<body>
+		<h2>Window Object Demo</h2>
+		
+		<input type="button" value="Open Window" onclick="openWindow()"/>
+		<input type="button" value="Close Window" onclick="mywindow.close()"/>
+		<input type="button" value="Focus Window" onclick="mywindow.focus()"/>
+		<input type="button" value="Blur Window" onclick="mywindow.blur()"/>
+		
+		<hr>
+		<h2>Timeout Demo</h2>
+		<input type="button" value="Click me to display a alert after 5 seconds"
+			   onclick="func1()"/>
+			   
+		<hr>
+		<form>
+		<input type="text" name="time" size="50">
+		
+		<input type="button" value="Clear Interval"
+		onclick="clearInterval(y)"/>
+		</form>
+	</body>
+</html>

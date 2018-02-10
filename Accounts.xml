@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<accounts>
+	<account acno="191819">
+		<name>Vijay</name>
+		<type>Savings</type>
+		<balance>19999</balance>
+	</account>
+	
+	<account acno="1001">
+		<name>Madhavi</name>
+		<type>Current</type>
+		<balance>2000</balance>
+	</account>
+	
+	<account acno="919">
+		<name>Malcolm</name>
+		<balance>20980</balance>
+		<type>Savings</type>		
+	</account>
+</accounts>

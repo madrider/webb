@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>DOM Demo</title>
+		<script type="text/javascript">
+		
+		function showHide()
+		{
+			if(document.f1.rad1[0].checked)
+			{
+				document.getElementById("div1").style.visibility="visible";
+				//document.getElementById("div2").style.visibility="hidden";
+			}
+			else if(document.f1.rad1[1].checked)
+			{
+				//document.getElementById("div1").style.visibility="hidden";
+				document.getElementById("div2").style.visibility="visibile";
+			}
+		}
+		
+		</script>
+	</head>
+	
+	<body>
+	<h2>DOM Demo</h2>
+	
+	<form name="f1">
+	
+	<input type="radio" name="rad1" value="location" onclick="showHide()">Location
+	<input type="radio" name="rad1" value="bu" onclick="showHide()">BU
+	
+	</form>
+	
+	<div id="div1" style="visibility:hidden">
+	<ul>
+		<li>Mumbai</li>
+		<li>Chennai</li>
+		<li>Pune</li>
+		<li>Hyderabad</li>
+		<li>Bengaluru</li>
+	</ul>
+	</div>
+	
+	<div id="div2" style="visibility:hidden">
+	<ul>
+		<li>Apps</li>
+		<li>FS</li>
+		<li>Consulting</li>
+		<li>Sogeti</li>
+		<li>Infra</li>
+	</ul>
+	</div>
+	
+	</body>
+</html>

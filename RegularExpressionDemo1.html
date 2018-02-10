@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Regular Expression Demo</title>
+	</head>
+	
+	<body>
+		<h2>Regular Expression Demo</h2>
+		
+		<script type="text/javascript">
+		
+		var p1 = /\bOr/;
+		var str1="Orange";
+		
+		if(str1.match(p1))
+		{
+			document.write("Valid String<br>");
+		}
+		else
+		{
+			document.write("Invalid String<br>");
+		}
+		
+		var p2=/or\B/;
+		var str2="traintorr";
+		if(str2.match(p2))
+		{
+			document.write("Valid String<br>");
+		}
+		else
+		{
+			document.write("Invalid String<br>");
+		}
+		
+		</script>
+	</body>
+</html>

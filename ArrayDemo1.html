@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Array Demo</title>
+	</head>
+	
+	<body>
+		<h2>Array Demo</h2>
+		
+		<script type="text/javascript">
+			
+			//creating an array
+			var arr = new Array(5);
+			arr[0]=10;
+			arr[1]=88;
+			arr[2]=-99;
+			arr[3]=22;
+			arr[4]=-11;
+			
+			document.write("Display Array Data with For Loop <br>");
+			for(i=0;i<arr.length;i++)
+			{
+			document.write(arr[i]+"<br>");
+			}
+			
+			
+			document.write("<br>Content of Array ="+arr);
+			document.write("<br>Content of Array = "+arr.join(";"));
+			var sortedarray = arr.sort();
+			document.write("<br>Sorted Array = "+sortedarray);
+			
+			var reversearray =sortedarray.reverse();
+			document.write("<br>Reversed Array = "+reversearray);
+			
+			var smallarray = arr.slice(2);
+			document.write("<br>Small Array = "+smallarray);
+			
+		</script>
+	</body>
+</html>

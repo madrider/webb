@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Employees">
+		<xs:complexType>
+		<xs:sequence>
+		<xs:element name="Employee" maxOccurs="unbounded">
+			<xs:complexType>
+				<xs:all>
+				<xs:element name="name" type="xs:string"/>
+				
+				<xs:element name="age">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+						<xs:minInclusive value="21"/>
+						<xs:maxInclusive value="58"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+				<xs:element name="LOT">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+						<xs:enumeration value="Dotnet"/>
+						<xs:enumeration value="Java"/>
+						<xs:enumeration value="Oracle"/>
+						<xs:enumeration value="BI"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				</xs:all>
+			</xs:complexType>
+		</xs:element>
+		</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

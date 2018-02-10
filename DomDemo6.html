@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>DOM Demo</title>
+		<script type="text/javascript">
+			
+			function validateUser()
+			{
+				var uname = document.getElementById("txtname").value;
+				var pass=document.getElementById("txtpass").value;
+				
+				if(uname =="")
+				{
+					alert("Username cannot be blank");
+				}
+				
+				if(pass=="")
+				{
+					alert("Password cannot be blank");
+				}
+				
+				if(uname!="" && pass!="")
+				{
+					if(uname=="admin" && pass=="admin123")
+					{
+						alert("Login Successful");
+						//window.location.replace("http://www.google.com");
+					}
+					else
+					{
+						alert("Login Unsuccessful");
+					}
+				}
+			}
+			
+		</script>
+	</head>
+	
+	<body onsubmit="validateUser()">
+		<h2>Login</h2>
+		
+		<form>
+			Username <input type="text" id="txtname"/> <br><br>
+			Password <input type="password" id="txtpass"/><br><br>
+			
+			<input type="submit" value="Login"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Regular Expression Demo</title>
+		<script type="text/javascript">
+			/*function checkMobile()
+			{
+				
+			}*/
+			
+			document.getElementById("btn1").addEventListener("click",function(){
+			    var p1=/\d{10}/;
+				
+				var data = document.getElementById("txtmobile").value;
+				
+				if(date.match(p1))
+				{
+					alert("Valid Mobile Number");
+				}
+				else
+				{
+					alert("Invalid Mobile Number");
+				}
+			});
+		</script>
+	</head>
+	
+	<body>
+		<h2>Regular Expression Demo</h2>
+		
+		<form>
+		Mobile Number <input type="text" id="txtmobile">
+		
+		<input type="button" id="btn1" value="Validate"
+		/>
+		</form>	
+		
+	</body>
+</html>

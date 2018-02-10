@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Sample XML Document-->
+<Note priority="urgent"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="Notes.xsd">
+	<to>vijay@gmail.com</to>
+	<from>vijay@ymail.com</from>
+	<subject>Test Mail</subject>
+	<message>
+	Hi, This is an Example of XML
+	</message>
+</Note>

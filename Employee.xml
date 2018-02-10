@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="Employee.xsd">
+	<Employee>
+		<name>Vijay</name>
+		
+		<LOT>Dotnet</LOT><age>29</age>
+	</Employee>
+	
+	<Employee>
+		<name>Madhavi</name>
+		<age>22</age>
+		<LOT>Java</LOT>
+	</Employee>
+	
+	<Employee>
+		<name>Malcolm</name>
+		<age>35</age>
+		<LOT>Oracle</LOT>
+	</Employee>
+	
+</Employees>
